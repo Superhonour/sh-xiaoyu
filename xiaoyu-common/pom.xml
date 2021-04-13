@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>sh-xiaoyu</artifactId>
+        <groupId>com.sh</groupId>
+        <version>1.0.0</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>xiaoyu-common</artifactId>
+    <version>1.0.0</version>
+    <name>xiaoyu-common</name>
+    <description>公共包</description>
+    <modules>
+        <module>xiaoyu-common-base</module>
+        <module>xiaoyu-common-config</module>
+        <module>xiaoyu-common-feign</module>
+        <module>xiaoyu-common-util</module>
+        <module>xiaoyu-common-log</module>
+        <module>xiaoyu-common-security</module>
+    </modules>
+    <packaging>pom</packaging>
+
+    <dependencies>
+        <!--web-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <!--fastjson-->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>${fastjson.version}</version>
+        </dependency>
+    </dependencies>
+</project>

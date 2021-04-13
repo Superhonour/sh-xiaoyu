@@ -1,0 +1,3 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.sh.xiaoyu.common.security.service.UserDetailServiceImpl,\
+  com.sh.xiaoyu.common.security.service.ClientDetailsServiceImpl

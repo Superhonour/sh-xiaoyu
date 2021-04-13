@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>xiaoyu-admin</artifactId>
+        <groupId>com.sh</groupId>
+        <version>1.0.0</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>xiaoyu-admin-biz</artifactId>
+    <version>1.0.0</version>
+    <name>xiaoyu-admin-biz</name>
+    <description>admin 用户鉴权服务</description>
+
+    <dependencies>
+        <!-- for swagger -->
+        <!--        <dependency>-->
+        <!--            <groupId>com.spring4all</groupId>-->
+        <!--            <artifactId>swagger-spring-boot-starter</artifactId>-->
+        <!--            <version>${swagger-spring-boot-starter.version}</version>-->
+        <!--        </dependency>-->
+        <!--公共 log 包含工具包 -->
+        <dependency>
+            <groupId>com.sh</groupId>
+            <artifactId>xiaoyu-common-log</artifactId>
+            <version>${xiaoyu-common.version}</version>
+        </dependency>
+        <!--公共配置包 包含base包-->
+        <dependency>
+            <groupId>com.sh</groupId>
+            <artifactId>xiaoyu-common-config</artifactId>
+            <version>${xiaoyu-common.version}</version>
+        </dependency>
+        <!--公共security包 包含admin api 及 包含base-->
+        <dependency>
+            <groupId>com.sh</groupId>
+            <artifactId>xiaoyu-common-security</artifactId>
+            <version>${xiaoyu-common.version}</version>
+        </dependency>
+        <!--actuator监管-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+        <!--eureka client-->
+        <!--        <dependency>-->
+        <!--            <groupId>org.springframework.cloud</groupId>-->
+        <!--            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>-->
+        <!--        </dependency>-->
+        <!-- nacos -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
+            <version>${spring-cloud-alibaba.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
+            <version>${spring-cloud-alibaba.version}</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

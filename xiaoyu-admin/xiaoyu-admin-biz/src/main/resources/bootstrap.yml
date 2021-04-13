@@ -1,0 +1,19 @@
+server:
+  port: 8001
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  application:
+    name: xiaoyu-admin
+  cloud:
+    nacos:
+      config:
+        server-addr: 127.0.0.1:8848
+        file-extension: yml
+        namespace: fb08ad91-43eb-43dd-9ca2-f5bce977d374
+        group: DEFAULT_GROUP
+      discovery:
+        server-addr: 127.0.0.1:8848
+        namespace: fb08ad91-43eb-43dd-9ca2-f5bce977d374
+  profiles:
+    active: dev

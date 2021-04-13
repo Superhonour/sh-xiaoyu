@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>xiaoyu-admin</artifactId>
+        <groupId>com.sh</groupId>
+        <version>1.0.0</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>xiaoyu-admin-api</artifactId>
+    <version>1.0.0</version>
+    <name>xiaoyu_admin_api</name>
+    <description>admin对外暴露接口 远程调用</description>
+
+    <dependencies>
+        <!--公共基礎包-->
+        <dependency>
+            <groupId>com.sh</groupId>
+            <artifactId>xiaoyu-common-base</artifactId>
+            <version>${xiaoyu-common.version}</version>
+        </dependency>
+        <!--feign 包含oauth-->
+        <dependency>
+            <groupId>com.sh</groupId>
+            <artifactId>xiaoyu-common-feign</artifactId>
+            <version>${xiaoyu-common.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-annotation</artifactId>
+            <version>${mybatis-plus.version}</version>
+        </dependency>
+        <!-- for swagger -->
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+            <version>${swagger.version}</version>
+        </dependency>
+    </dependencies>
+
+</project>
